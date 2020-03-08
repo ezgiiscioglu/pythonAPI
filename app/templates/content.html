@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Yıl</th>
+                    <th>Model</th>
+                    <th>Dış Renk</th>
+					<th>İç Renk</th>
+                    <th>Vites Türü</th>
+                    <th>Fiyat</th>
+                    <th>İletişim</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for entry in entries %}
+                <tr>
+                    <td>{{ entry.id }}</td>
+                    <td>{{ entry.year }}</td>
+                    <td>{{ entry.model }}</td>
+                    <td>{{ entry.extcolor }}</td>
+                    <td>{{ entry.intcolor }}</td>
+                    <td>{{ entry.transmission }}</td>
+                    <td>{{ entry.price }}</td>
+                    <td>{{ entry.contact }}</td>
+                    
+                </tr>
+                {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
