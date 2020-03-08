@@ -1,6 +1,5 @@
-Veritabanı ayarlarını 
-config.py'den yapılacak
-SQLALCHEMY_DATABASE_URI degistirin
+Veritabanı ayarlarını config.py'den yapılacak
+SQLALCHEMY_DATABASE_URI değiştirin
 VirtEnv ayarları ......
 
 ```
@@ -23,7 +22,3 @@ flask db upgrade
 ```
 flask run
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
